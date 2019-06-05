@@ -1,8 +1,9 @@
 {
-    "name": "template-node-ts",
-    "version": "1.0.0",
+    "name": "fn-onion",
+    "version": "0.2.0",
+    "main": "./dist/index.js",
     "scripts": {
-        "c": "tsc",
+        "c": "rm -fr ./dist && tsc",
         "serve": "ts-node src/index.ts",
         "dev": "ts-node-dev src/index.ts",
         "test": "jest"
@@ -12,9 +13,7 @@
     "devDependencies": {
         "@types/jest": "^24.0.13",
         "@types/node": "^12.0.2",
-        "@types/supertest": "^2.0.7",
         "jest": "^24.8.0",
-        "supertest": "^4.0.2",
         "ts-jest": "^24.0.2",
         "ts-node": "^8.1.0",
         "ts-node-dev": "^1.0.0-pre.39",
